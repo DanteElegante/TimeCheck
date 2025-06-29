@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">TimeCheck</string>
+    <string name="menu">Menu</string>
+
+    <!-- Botones -->
+    <string name="ok">Ok</string>
+    <string name="back">Volver</string>
+    <string name="continuar">Continuar</string>
+    <string name="cambiar">Cambiar</string>
+    <string name="checar">Checar</string>
+
+    <!-- Títulos -->
+    <string name="instrucciones">Instrucciones</string>
+    <string name="info_sucursal">Información de la sucursal</string>
+    <string name="funciones">Funciones y Responsabilidades</string>
+    <string name="procedimientos">Procedimientos</string>
+    <string name="bienvenida">Bienvenido(a)</string>
+    <string name="jornada_iniciada">Haz comenzado tu jornada laboral</string>
+
+    <!-- Campos de Información -->
+    <string name="nombre">Nombre:</string>
+    <string name="direccion">Dirección:</string>
+    <string name="encargado">Encargado(a):</string>
+    <string name="horario">Horario:</string>
+    <string name="nombre_usuario">Dante Palacios Olvera</string> <!-- o "Usuario" si será dinámico -->
+
+    <!-- Campos de Funciones -->
+    <string name="zonas">Zonas a cubrir:</string>
+    <string name="tareas">Tareas específicas:</string>
+    <string name="uniforme">Uniforme y equipo:</string>
+
+    <!-- Campos de Procedimientos -->
+    <string name="incidentes">Registro de incidentes</string>
+    <string name="relevo">Entrega de turno (relevo)</string>
+
+    <!-- Extras para ConfirmarFoto e InicioConfirmado -->
+    <string name="fecha_y_hora">Lunes 17 de marzo de 2025, 11:50:50 hrs</string>
+    <string name="tu_foto_lista">Tu foto está lista. Aún puedes cambiarla abriendo de nuevo la cámara.</string>
+    <string name="selfie">Foto tomada del guardia</string>
+    <string name="check_icon">Ícono de confirmación de jornada</string>
+
+    <string name="titulo_informe">Informe</string>
+    <string name="revisado">Revisado</string>
+    <string name="tomar_foto">📷</string>
+    <string name="guardar">Guardar</string>
+    <string name="checar_extintor">Checar extintor</string>
+    <string name="tomar_foto_extintor">📷 Tomar foto</string>
+    <string name="enviar_informe">Enviar</string>
+
+</resources>
+

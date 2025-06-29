@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:text="Bienvenido(a)"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/usernameText"
+        android:text="Usuario"
+        android:textColor="#007B7F"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/dateTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha y hora"
+        android:layout_marginTop="8dp" />
+
+    <!-- Aquí agregamos el TextView con id instructionText -->
+    <TextView
+        android:id="@+id/instructionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Para comenzar tu jornada es necesario tomar una fotografía (selfie)"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:id="@+id/instructionImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_selfie_instruction" />
+
+    <Button
+        android:id="@+id/openCameraButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abrir cámara"
+        android:drawableStart="@drawable/ic_camera"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#003344"
+        android:textColor="#FFFFFF"/>
+</LinearLayout>
+

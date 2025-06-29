@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <!-- Título de la confirmación sin fondo de color -->
+    <TextView
+        android:text="Informe enviado"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#007B7F"
+        android:padding="12dp" />
+
+    <!-- Icono de check -->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_check_circle"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/check_icon" />
+
+    <!-- Mensaje de confirmación -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tu informe ha sido enviado correctamente."
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:textColor="#007B7F" />
+
+    <!-- Botón para regresar al menú -->
+    <Button
+        android:id="@+id/backToMenuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continuar"
+        android:backgroundTint="#003344"
+        android:textColor="#FFFFFF"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="12dp"
+        android:textSize="16sp"
+        android:layout_marginTop="24dp" />
+</LinearLayout>
+

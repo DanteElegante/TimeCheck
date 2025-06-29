@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Mensaje de confirmación -->
+    <TextView
+        android:id="@+id/confirmationMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Estás seguro de cerrar sesión?"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Imagen de puerta -->
+    <ImageView
+        android:id="@+id/logoutDoorImage"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="Imagen de puerta para salir"
+        android:src="@drawable/ic_door"
+        app:layout_constraintTop_toBottomOf="@id/confirmationMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botón para confirmar el cierre de sesión -->
+    <Button
+        android:id="@+id/confirmLogoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sí, cerrar sesión"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/logoutDoorImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#003344"
+        android:textColor="#FFFFFF"/>
+
+    <!-- Botón para cancelar el cierre de sesión -->
+    <Button
+        android:id="@+id/cancelLogoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/confirmLogoutButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#003344"
+        android:textColor="#FFFFFF"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

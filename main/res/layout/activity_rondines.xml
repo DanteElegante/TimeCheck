@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnRondaPerimetral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="Ronda perimetral (no iniciada)"
+        android:textColor="#007B7F"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Realizar rondin perimetral correspondiente"
+        android:textSize="12sp"
+        android:textColor="#555555"
+        android:paddingStart="12dp"
+        android:paddingBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/tvPuntosPerimetral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Puntos a inspeccionar: 3"
+        android:textSize="12sp"
+        android:textColor="#007B7F"
+        android:paddingStart="12dp"
+        android:paddingBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnInterior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="Interior (no iniciada)"
+        android:textColor="#007B7F"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Realizar rondin interno"
+        android:textSize="12sp"
+        android:textColor="#555555"
+        android:paddingStart="12dp"
+        android:paddingBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/tvPuntosInterior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Puntos a inspeccionar: 2"
+        android:textSize="12sp"
+        android:textColor="#007B7F"
+        android:paddingStart="12dp"/>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:id="@+id/usernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#007B7F"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/dateTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha y hora"
+        android:layout_marginBottom="12dp" />
+
+    <ImageView
+        android:id="@+id/selfieImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#CCCCCC"
+        android:contentDescription="Foto tomada"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/changePhotoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cambiar foto"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#003344"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/confirmPhotoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar"
+        android:backgroundTint="#003344"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

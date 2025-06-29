@@ -1,0 +1,108 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Título del informe -->
+        <TextView
+            android:id="@+id/tituloInforme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_informe"
+            android:textColor="#FFFFFF"
+            android:background="#007B7F"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="12dp" />
+
+        <!-- Revisión -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/checkRevisado"
+                android:text="@string/revisado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/estadoCheck"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="8dp"/>
+
+            <!-- Imagen agregada antes del botón -->
+            <ImageView
+                android:id="@+id/imgCameraIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:contentDescription="@string/tomar_foto"
+                android:src="@drawable/ic_camera" />
+
+            <Button
+                android:id="@+id/btnFotoCheck"
+                android:text="@string/tomar_foto"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#003344"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/btnGuardarCheck"
+                android:text="@string/guardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#003344"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Foto de extintor -->
+        <TextView
+            android:text="@string/checar_extintor"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"/>
+
+        <ImageView
+            android:id="@+id/fotoExtintor"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#CCCCCC"
+            android:scaleType="centerCrop"/>
+
+        <Button
+            android:id="@+id/btnFotoExtintor"
+            android:text="@string/tomar_foto_extintor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#003344"
+            android:textColor="#FFFFFF"/>
+
+        <!-- Botón para enviar informe -->
+        <Button
+            android:id="@+id/btnEnviarInforme"
+            android:text="@string/enviar_informe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#003344"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,108 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/supervisorTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bienvenido, Supervisor"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:columnCount="2"
+                android:rowCount="4"
+                android:padding="40dp"
+                android:rowOrderPreserved="false"
+                android:useDefaultMargins="true">
+
+                <ImageButton
+                    android:id="@+id/startShiftButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_iniciar_turno_supervisor"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Inicio de turno" />
+
+                <ImageButton
+                    android:id="@+id/endShiftButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_terminar_turno_supervisor"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Terminar turno" />
+
+                <ImageButton
+                    android:id="@+id/rondinesButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_rondines"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Rondines" />
+
+                <ImageButton
+                    android:id="@+id/instructionsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_instrucciones_supervisor"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Instrucciones" />
+
+                <ImageButton
+                    android:id="@+id/reportsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_informes"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Informes" />
+
+                <ImageButton
+                    android:id="@+id/quickAlertsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_alertas_rapidas_supervisor"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Alertas rápidas" />
+
+                <ImageButton
+                    android:id="@+id/incidentsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_incidencias_supervisor"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Incidencias" />
+
+                <ImageButton
+                    android:id="@+id/logoutButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_logout_supervisor"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Cerrar sesión" />
+
+            </GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

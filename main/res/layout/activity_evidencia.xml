@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvEncabezado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Evidencias"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#007B7F"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripción"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:paddingBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="top"
+        android:padding="12dp"
+        android:hint="Escribe una descripción..." />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+
+        <Button
+            android:id="@+id/btnCamara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cámara 📷"
+            android:backgroundTint="#003344"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnGaleria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Galería"
+            android:layout_marginStart="12dp"
+            android:backgroundTint="#003344"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:layout_gravity="center"
+        android:padding="12dp"
+        android:backgroundTint="#007B7F"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

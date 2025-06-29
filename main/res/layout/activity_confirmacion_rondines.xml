@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <!-- Título -->
+    <TextView
+        android:text="Rondines Completados"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#007B7F"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <!-- Icono de check -->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_check_circle"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/check_icon" />
+
+    <!-- Mensaje -->
+    <TextView
+        android:text="Has completado todos los rondines."
+        android:textSize="16sp"
+        android:textColor="#007B7F"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botón para volver al menú -->
+    <Button
+        android:id="@+id/btnVolverMenu"
+        android:text="Volver al menú"
+        android:backgroundTint="#003344"
+        android:textColor="#FFFFFF"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="12dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>

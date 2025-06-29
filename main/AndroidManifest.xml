@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permiso para usar la cámara -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <!-- Declaración del hardware cámara -->
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+
+    <!-- Declaración de la aplicación -->
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TimeCheck"
+        tools:targetApi="31">
+
+        <!-- Actividad principal (login) -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Actividades del guardia y supervisor -->
+        <activity android:name=".GuardActivity" android:exported="true" />
+        <activity android:name=".SupervisorActivity" android:exported="true" />
+        <activity android:name=".ConfirmLogoutActivity" android:exported="true" />
+        <activity android:name=".HorasExtraActivity" android:exported="true" />
+        <activity android:name=".FinTurnoActivity" android:exported="true" />
+        <activity android:name=".InstruccionesGuardiaActivity" android:exported="true" />
+        <activity android:name=".InstruccionesSupervisorActivity" android:exported="true" />
+        <activity android:name=".TomarFotoActivity" android:exported="true" />
+        <activity android:name=".ConfirmarFotoActivity" android:exported="true" />
+        <activity android:name=".InicioConfirmadoActivity" android:exported="true" />
+        <activity android:name=".ConfirmarFotoHorasExtraActivity" android:exported="true" />
+        <activity android:name=".InicioConfirmadoHorasExtraActivity" android:exported="true" />
+        <activity android:name=".IncidenciaActivity" android:exported="true" />
+        <activity android:name=".ConfirmacionIncidenciaActivity" android:exported="true" />
+        <activity android:name=".ConfirmacionAlertaActivity" android:exported="true" />
+        <activity android:name=".AlertasRapidasActivity" android:exported="true" />
+        <activity android:name=".EnviarAlertaActivity" android:exported="true" />
+        <activity android:name=".InformesActivity" android:exported="true"/>
+        <activity android:name=".DetalleInformeActivity" android:exported="true"/>
+        <activity android:name=".ConfirmacionInformeActivity" android:exported="true"/>
+        <activity android:name=".RondinesActivity" android:exported="true" />
+        <activity android:name=".RondaPerimetralDetalleActivity" android:exported="true" />
+        <activity android:name=".InteriorDetalleActivity" android:exported="true" />
+        <activity android:name=".EvidenciaActivity" android:exported="true" />
+        <activity android:name=".ConfirmacionRondinesActivity" android:exported="true" />
+        <activity android:name=".FinTurnoConfirmadoActivity" android:exported="true"/>
+
+
+    </application>
+
+</manifest>

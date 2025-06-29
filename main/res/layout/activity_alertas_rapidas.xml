@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Título de la actividad -->
+    <TextView
+        android:text="Alertas Rápidas"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#007B7F"
+        android:textColor="#FFFFFF"
+        android:padding="12dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Botones de alerta con estilo unificado -->
+            <Button
+                android:id="@+id/btnInundacion"
+                android:text="Inundación"
+                style="@style/AlertaBoton" />
+            <Button
+                android:id="@+id/btnIncendio"
+                android:text="Incendio"
+                style="@style/AlertaBoton" />
+            <Button
+                android:id="@+id/btnVidrios"
+                android:text="Ruptura de vidrios"
+                style="@style/AlertaBoton" />
+            <Button
+                android:id="@+id/btnApagon"
+                android:text="Apagón"
+                style="@style/AlertaBoton" />
+            <Button
+                android:id="@+id/btnFarderos"
+                android:text="Farderos"
+                style="@style/AlertaBoton" />
+            <Button
+                android:id="@+id/btnSalud"
+                android:text="Salud"
+                style="@style/AlertaBoton" />
+            <Button
+                android:id="@+id/btnOtro"
+                android:text="Otro"
+                style="@style/AlertaBoton" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

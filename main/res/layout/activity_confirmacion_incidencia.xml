@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/bienvenidaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incidencia enviada"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#000000" />
+
+    <!-- Datos sucursal y asunto -->
+    <TextView
+        android:id="@+id/usernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sucursal y Asunto"
+        android:textColor="#007B7F"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center" />
+
+    <!-- Icono de confirmación -->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_check_circle"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/check_icon" />
+
+    <!-- Mensaje adicional -->
+    <TextView
+        android:id="@+id/messageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tu reporte de incidencia ha sido enviado correctamente."
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000" />
+
+    <!-- Botón continuar -->
+    <Button
+        android:id="@+id/backToMenuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continuar"
+        android:backgroundTint="#003344"
+        android:textColor="#FFFFFF"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="12dp"
+        android:textSize="16sp"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>
+
